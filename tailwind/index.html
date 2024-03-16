@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page with Animations</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    
+
+</head>
+<style>
+nav a:hover {
+    color: #1a202c; /* Change to your desired text color on hover */
+    border-bottom: 2px solid #4299e1; /* Change to your desired border color on hover */
+}
+
+
+
+
+</style>
+
+<body class="bg-gray-100 dark:bg-gray-800">
+  <button id="scrollToTopBtn" class="fixed bottom-10 right-10 bg-blue-500 text-white px-4 py-2 rounded-full hidden">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+  <header class="text-gray-600 body-font fixed w-full z-10  dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 backdrop-filter backdrop-blur-lg">
+
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="assets/tASAS.jpeg" alt="Logo" class="w-10 h-10 rounded-full"> <!-- Logo Image -->
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 transition duration-300 ease-in-out">Home</a>
+        <a class="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 transition duration-300 ease-in-out">About</a>
+        <a class="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 transition duration-300 ease-in-out">Services</a>
+        <a class="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 transition duration-300 ease-in-out">Contact</a>
+    </nav>
+    
+
+
+      
+  </header>
+
+<!-- Hero Section -->
+<section class="text-gray-700 body-font" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <div class="text-center lg:w-2/3 w-full">
+      <!-- Increased font size for the main heading -->
+      <h1 class="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-900 mt-40"> <span class="text-blue-500">ARKx</span> est un accélérateur de talents en nouvelles technologies.</h1>
+      
+      <!-- Services with slightly larger text size -->
+      <div class="flex justify-center space-x-4 mb-8">
+        <span class="inline-flex text-xl text-blue-500">Formation</span>
+        <span class="inline-flex text-xl text-blue-500">Coaching</span>
+        <span class="inline-flex text-xl text-blue-500">Déploiement</span>
+      </div>
+
+      <!-- Paragraph with a bit larger text for better readability -->
+      <p class="mb-8 leading-relaxed text-lg">Nous proposons des services centrés sur les compétences technologiques, allant des bootcamps de montée en compétences et de reconversion au déploiement d'équipes-projet pour nos partenaires.</p>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-12 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-up" data-aos-duration="1000">TALENT JOURNEY D'ARK-X TALENT FACTORY</h2>
+    <p class="text-center mb-12" data-aos="fade-up" data-aos-duration="1200">La Talent Journey d'ARK-X Talent Factory est un programme complet qui aide les jeunes talents à s'insérer dans le secteur du digital. Elle s'articule autour de six étapes.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow p-6 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1300">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-lightbulb text-3xl text-blue-500 mr-4"></i>
+          <h3 class="text-xl font-semibold">Sensibilisation</h3>
+        </div>
+        <p>Les jeunes découvrent les opportunités du digital et leurs talents.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1400">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-compass text-3xl text-blue-500 mr-4"></i>
+          <h3 class="text-xl font-semibold">Orientation</h3>
+        </div>
+        <p>Les jeunes précisent leur projet professionnel.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1500">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-book-open text-3xl text-blue-500 mr-4"></i>
+          <h3 class="text-xl font-semibold">Formation</h3>
+        </div>
+        <p>Les jeunes acquièrent les compétences nécessaires.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1600">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-briefcase text-3xl text-blue-500 mr-4"></i>
+          <h3 class="text-xl font-semibold">Insertion</h3>
+        </div>
+        <p>Les jeunes trouvent un emploi.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1700">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-chart-line text-3xl text-blue-500 mr-4"></i>
+          <h3 class="text-xl font-semibold">Accompagnement</h3>
+        </div>
+        <p>Les jeunes développent leur carrière.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out" data-aos="flip-up" data-aos-duration="1800">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-handshake text-3xl text-blue-500 mr-4"></i>
+          <h3 class="text-xl font-semibold">Give Back</h3>
+        </div>
+        <p>Les jeunes contribuent au développement de leur communauté.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4 text-center"> 
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">QUI SOMMES NOUS ?</h2>
+  
+      <!-- Part 1: L'équipe ARK-X -->
+      <div class="flex flex-col md:flex-row items-center mb-12" data-aos="fade-right">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">1. L'équipe ARK-X</h3>
+          <p class="text-gray-600">Notre équipe est composée de professionnels passionnés, experts dans leurs domaines respectifs, et unis par une vision commune. Chaque Arkadian apporte une expertise complémentaire, essentielle à la réalisation de la Talent Journey.</p>
+        </div>
+      </div>
+  
+      <!-- Part 2: Notre Histoire -->
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12" data-aos="fade-left">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">2. Notre Histoire</h3>
+          <p class="text-gray-600">ARK-X et née d'abord de l'intention de débloquer le potentiel de la jeunesse marocaine. Cette intention a trouvé son écho dans l'opportunité offerte par les carrières dans nouvelles technologies.</p>
+        </div>
+      </div>
+  
+      <!-- Part 3: Notre Vision & Mission -->
+      <div class="flex flex-col md:flex-row items-center" data-aos="fade-right">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">3. Notre Vision & Mission</h3>
+          <p class="text-gray-600">Notre mission c'est de débloquer le potentiel des jeunesses africaines et arabes en leur facilitant l'accès à des carrières de classe mondiales dans les nouvelles technologies.</p>
+          <p class="text-gray-600 mt-2">Notre Vision : être un hub mondial de talents pour l'innovation technologique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white mb-4">IMPACT OF 5 YEARS</h1>
+        <div class="flex flex-wrap -m-4 mt-6">
+          <div class="p-4 md:w-1/3 sm:w-1/2 w-full" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <div class="title-font font-medium text-3xl text-gray-900 dark:text-white">600</div>
+              <p class="leading-relaxed">Alumnis</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 sm:w-1/2 w-full" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <div class="title-font font-medium text-3xl text-gray-900 dark:text-white">1,000</div>
+              <p class="leading-relaxed">Initiated to coding</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 sm:w-1/2 w-full" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <div class="title-font font-medium text-3xl text-gray-900 dark:text-white">87%</div>
+              <p class="leading-relaxed">Insertion rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <!-- Section 1: Image on Left, Description on Right -->
+<section class="flex flex-col md:flex-row items-center justify-between py-12 px-4 md:px-12">
+  <div data-aos="fade-right" class="mb-8 md:mb-0 md:w-1/2 flex justify-center md:justify-end md:mr-8 lg:mr-12">
+      <img src="assets/téléchargement (4).png" alt="Description" class="rounded-lg  w-full max-w-md" />
+  </div>
+  <div data-aos="fade-left" class="md:w-1/2 flex justify-center md:justify-start text-center md:text-left md:ml-8 lg:ml-12">
+      <div>
+          <h2 class="text-2xl font-semibold mb-4">FullStack MERN (MongoDB, Express.js, React, Node.js)</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            ARKX Academy Deviens MERN Stack Developer en 5 mois avec ArkX, le pionnier des bootcamps au Maroc.
+            </p>
+      </div>
+  </div>
+</section>
+
+<!-- Section 2: Image on Right, Description on Left -->
+<section class="flex flex-col md:flex-row-reverse items-center justify-between py-12 px-4 md:px-12">
+  <div data-aos="fade-left" class="mb-8 md:mb-0 md:w-1/2 flex justify-center md:justify-start md:ml-8 lg:ml-12">
+      <img src="assets/téléchargement (3).png" alt="Description" class="rounded-lg  w-full max-w-md" />
+  </div>
+  <div data-aos="fade-right" class="md:w-1/2 flex justify-center md:justify-end text-center md:text-left md:mr-8 lg:mr-12">
+      <div>
+          <h2 class="text-2xl font-semibold mb-4">FullStack JAVA | SPRING | ANGULAR</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            ARKX Academy
+            Deviens JAVA Software Engineer en 5 mois avec ArkX, le pionnier des bootcamps au Maroc..</p>
+      </div>
+  </div>
+</section>
+
+
+
+
+<section class="py-12 bg-gray-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Vous nous avez peut-être vus dans</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <!-- Card 1 -->
+      <div class="max-w-sm" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-blue-500 hover:scale-105 transition duration-300 ease-in-out">
+          <div class="p-5 border-b hover:border-transparent">
+            <h3 class="text-3xl font-semibold mb-2 hover:text-white">ARK X - Le Matin</h3>
+            <p class="text-gray-600 hover:text-white">Debbarh's longer term goal: "We want to democratize access to coding, IT skills and web development for Moroccans and people in the Middle East and North Africa ".</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat for other cards -->
+      
+      <div class="max-w-sm" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-blue-500 hover:scale-105 transition duration-300 ease-in-out">
+          <div class="p-5 border-b hover:border-transparent">
+            <h3 class="text-3xl font-semibold mb-2 hover:text-white">ARK-x Al-monitor</h3>
+            <p class="text-gray-600 hover:text-white">"3W Academy Maroc aims at addressing youth unemployment in  Morocco through accessible tech education. Morocco through accessible tech education."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-sm" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-blue-500 hover:scale-105 transition duration-300 ease-in-out">
+          <div class="p-5 border-b hover:border-transparent">
+            <h3 class="text-3xl font-semibold mb-2 hover:text-white">ARK-X FORBES</h3>
+            <p class="text-gray-600 hover:text-white">"Business is the practice of making one's living or making money by producing or buying and selling products. It is also 'Any activity or enterprise entered into for profit.'"</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font relative" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-wrap">
+    <!-- Contact Form -->
+    <div class="lg:w-1/2 md:w-2/3 w-full">      
+
+      <form class="mx-auto">        <h1 class="text-4xl font-bold mb-6">Contact Us</h1>
+
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text">
+          </div>
+          <div class="p-2 w-1/2">
+            <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Email" type="email">
+          </div>
+          <div class="p-2 w-full">
+            <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
+          </div>
+          <div class="p-2 w-full">
+            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+   
+  </div>
+</section>
+
+
+
+
+    <footer class="body-font  ">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <div class="flex flex-col sm:flex-row items-center sm:justify-start justify-center text-center sm:text-left">
+                <a href="#" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                  <img src="assets/tASAS.jpeg" alt="Your Site Logo" class="w-10 h-10 rounded-full">
+
+                    <span class="ml-3 text-xl">Ark-x.com</span>
+                </a>
+                
+                
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a href="#" class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                
+                </span>
+            </div>
+            <div class="sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.8742641205108!2d-6.835465855676402!3d34.018941027858105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76dde41e50f03%3A0xc529ac2f0e326eb0!2sIFIAG%20Le%20Caire!5e1!3m2!1sfr!2sma!4v1710603384133!5m2!1sfr!2sma" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+
+      const header = document.querySelector('header');
+
+      window.addEventListener('scroll', () => {
+          if(window.scrollY > 50) {
+              header.classList.add('backdrop-filter', 'backdrop-blur-lg');
+          } else {
+              header.classList.remove('backdrop-filter', 'backdrop-blur-lg');
+          }
+      });
+  });
+</script>
+
+
+<script>
+  // Function to scroll to the top of the page smoothly
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  }
+
+  // Show/hide the scroll to top button based on scroll position
+  window.addEventListener('scroll', function() {
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      if (window.pageYOffset > 100) {
+          scrollToTopBtn.classList.remove('hidden');
+      } else {
+          scrollToTopBtn.classList.add('hidden');
+      }
+  });
+
+  // Add event listener to scroll to top button
+  document.getElementById('scrollToTopBtn').addEventListener('click', scrollToTop);
+</script>
+<script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+
+
+
+
+</body>
+</html>
